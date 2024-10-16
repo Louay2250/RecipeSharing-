@@ -1,0 +1,12 @@
+<div>
+    <div class="min-h-[91vh]">
+      <app-navbar></app-navbar>  
+      <ng-container *ngIf="user; else loginTemplate">
+        <app-home-page></app-home-page>
+      </ng-container>
+      <ng-template #loginTemplate>
+        <app-auth></app-auth>
+      </ng-template>
+    </div>
+  </div>
+  

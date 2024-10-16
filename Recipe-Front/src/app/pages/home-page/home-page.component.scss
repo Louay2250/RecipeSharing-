@@ -1,0 +1,23 @@
+.recipe-container {
+    margin-left: 8rem;
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next row if they don't fit */
+    gap: 16px; /* Adds space between the cards */
+  }
+  
+  .recipe-card {
+    flex: 1 1 300px; /* Allows cards to shrink or grow as necessary, with a base width of 300px */
+    max-width: 300px; /* Ensures the cards don't get too wide */
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5;
+  }
+.butto{
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+}
+  

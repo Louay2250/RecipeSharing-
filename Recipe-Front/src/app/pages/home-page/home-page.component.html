@@ -1,0 +1,17 @@
+<div class="container">
+<div class="recipe-container" *ngIf="recipes.length > 0; else noRecipes">
+    <app-recipe-card *ngFor="let item of recipes;" class="recipe-card"   [recipe]="item"></app-recipe-card>
+  </div>
+  
+  <ng-template #noRecipes>
+    <div>No Recipe Exists</div>
+  </ng-template>
+  <div class="butto" >
+    <button (click)="handleopenCreateRecipeForm()" mat-fab color="primary">
+
+        <mat-icon>add</mat-icon>
+
+    </button>
+  </div>
+</div>
+  

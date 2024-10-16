@@ -1,0 +1,33 @@
+<form (ngSubmit)="onSubmit()" class="formm">
+    <div style="margin-bottom: 1rem;">
+        
+            <mat-form-field style="width:100%;">
+              <mat-label  color="primary" style="color: black;">Title</mat-label>
+              <input matInput placeholder="title..." value="" name="Title" [(ngModel)]="recipeItem.title" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.75rem; padding-right: 0.75rem; color: gray; margin-top: 0.25rem; box-shadow: none;" onfocus="this.style.boxShadow='0 0 0 3px rgba(66, 153, 225, 0.5)';" onblur="this.style.boxShadow='none';">
+
+            </mat-form-field>
+    </div>
+    <div style="margin-bottom: 1rem;">
+        
+        <mat-form-field style="width:100%;">
+          <mat-label style="color: black;">Description</mat-label>
+          <input matInput placeholder="description..." value="" name="description:" [(ngModel)]="recipeItem.description" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.75rem; padding-right: 0.75rem; color: gray; margin-top: 0.25rem; box-shadow: none;" onfocus="this.style.boxShadow='0 0 0 3px rgba(66, 153, 225, 0.5)';" onblur="this.style.boxShadow='none';">
+    </mat-form-field>
+    </div>
+    <div style="margin-bottom: 1rem;">
+        
+        <mat-form-field style="width:100%;">
+          <mat-label style="color: black;">Image</mat-label>
+          <input matInput placeholder="image url..." value="" name="image" [(ngModel)]="recipeItem.image" style="padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 0.75rem; padding-right: 0.75rem; color: gray; margin-top: 0.25rem; box-shadow: none;" onfocus="this.style.boxShadow='0 0 0 3px rgba(66, 153, 225, 0.5)';" onblur="this.style.boxShadow='none';"> 
+    </mat-form-field>
+    </div>
+    <div style="margin-bottom: 1rem;">
+            <mat-radio-group name="foodType"  [(ngModel)]="recipeItem.foodType" aria-label="Select an option">
+                    <mat-radio-button value="veg">Vegetarian</mat-radio-button>
+                     <mat-radio-button value="non_veg">Non Vegetarian</mat-radio-button>
+            </mat-radio-group>
+</div>
+    <div>
+        <button mat-raised-button color="primary" type="submit">Create</button>
+    </div>
+</form> 

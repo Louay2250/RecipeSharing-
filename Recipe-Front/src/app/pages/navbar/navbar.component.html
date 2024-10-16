@@ -1,0 +1,18 @@
+<p>
+  <mat-toolbar class="flex items-center justify-between" color="primary">
+    <div>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+    </div>
+    <div class="spacer"></div> <!-- This spacer will push content to the right -->
+    <div>
+      <button class="user-button" (click)="handleLogout()">
+        {{ user?.fullName }}
+      </button>
+    </div>
+  </mat-toolbar>
+  
+  
+</p>
